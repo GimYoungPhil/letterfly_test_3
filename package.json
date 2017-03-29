@@ -1,7 +1,27 @@
 {
   "name": "letterfly_test_3",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "GimYoungPhil <youngphil.gim@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8000",
+    "dev": "NODE_ENV=development webpack-dev-server --hot",
+    "build": "NODE_ENV=production webpack --progress"
+  },
+  "dependencies": {
+    "draft-js": "^0.10.0",
+    "immutable": "^3.8.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.27.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
